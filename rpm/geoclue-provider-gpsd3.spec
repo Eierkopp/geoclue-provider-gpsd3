@@ -5,7 +5,7 @@ Summary: geoclue provider for gpsd daemon
 Group: System/Libraries
 URL: https://github.com/neochapay/geoclue-provider-gpsd3
 License: LGPLv2.1
-Source: %{name}-%{version}.tar.gz
+Source: %{name}.tar.gz
 BuildRequires: pkgconfig(libgps) >= 3.20
 BuildRequires: pkgconfig(geoclue) >= 0.12.99
 
@@ -13,7 +13,7 @@ BuildRequires: pkgconfig(geoclue) >= 0.12.99
 %{summary}.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}
 
 %build
 ./autogen.sh
