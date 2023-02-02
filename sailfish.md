@@ -194,7 +194,7 @@ geoclue-master, which controls the other geoclue plugins, will only allow one pr
     
 To use geoclue-hybris, disable geoclue-gpsd3.provider instead.
 
-7. Make stopping geoclue-gpsd3 work
+7. Make stopping geoclue-gpsd3 work (not longer required for SailfishOS 4.5 and later)
 
 One problem remains. Ending the last geoclue client should also end the bluetooth connection to the GPS mouse and stop gpsd. But there's a bug in libgeoclue, as shipped by Jolla, leading to this problem. The bug is already fixed in their public repository at https://github.com/sailfishos/geoclue but not included in Vanha Rauma. Building the library from source and installing it fixes the problem.
 
